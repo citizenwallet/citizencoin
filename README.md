@@ -1,7 +1,9 @@
 # citizencoin
+
 A local crypto currency for Brussels.
 
 ## Need
+
 Whenever we meet (e.g. every first Wednesday of the month for the Crypto Wednesday), we have to buy beers and/or pizzas and we don't always have cash with us.
 
 We can use SumUp but it takes 1.9% transaction fees. But that doesn't cover the use case of someone ordering pizzas for everyone.
@@ -26,7 +28,7 @@ Here is a project to solve that.
 - Most wallets won't hold more than €100 equivalent
 - Some wallets will be lost or forgotten
 - A pin code is enough to protect a wallet
-- Some people will want to move their coins to a more secure wallet 
+- Some people will want to move their coins to a more secure wallet
 
 ## MVP
 
@@ -41,14 +43,23 @@ This could be the seed for a new local currency in Brussels that would have buil
 ## Open questions
 
 - Which blockchain to use?
-We should use a cheap and fast blockchain that has a large community (EVM compatible). Contenders are:
+  We should use a cheap and fast blockchain that has a large community (EVM compatible). Contenders are:
   - Polygon
   - Gnosis Chain (xDAI)
   - Celo
   - Fuse
-  
+
 Key things to consider:
+
 - How easy it is to bridge to Ethereum and to a exchange? (Polygon is by far the best option here)
 - Is there enough liquidity on the stable coin used? (Polygon is leading here as well)
 - How fast is it for quick settlement?
 - Possibility to get a grant to support the project (Celo and Fuse might be more interesting for this)
+
+## Running the tests
+
+```
+git clone git@github.com:daobrussels/citizencoin.git
+cd citizencoin/smartcontracts
+npm run test
+```
