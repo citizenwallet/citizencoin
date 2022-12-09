@@ -32,7 +32,7 @@ Here is a project to solve that.
 
 ## MVP
 
-- People should be able to mint the coins by sending some stable coins ([agEUR](https://www.angle.money)?)
+- People should be able to mint the coins by sending some stable coins ([agEUR](https://www.angle.money)? [cEUR](https://docs.celo.org/learn/platform-native-stablecoins-summary)?)
 - People should be able to create a quick wallet by visiting a mobile friendly page to receive those coins (and send them)
   - This requires making sure that we can have gasless transactions or that new accounts receive enough native tokens to pay for fees from a faucet
 
@@ -42,24 +42,18 @@ This could be the seed for a new local currency in Brussels that would have buil
 
 ## Open questions
 
-- Which blockchain to use?
-  We should use a cheap and fast blockchain that has a large community (EVM compatible). Contenders are:
-  - Polygon
-  - Gnosis Chain (xDAI)
-  - Celo
-  - Fuse
+- [Which blockchain to use?](https://github.com/daobrussels/citizencoin/issues/1)
 
-Key things to consider:
+## Technical stack
 
-- How easy it is to bridge to Ethereum and to a exchange? (Polygon is by far the best option here)
-- Is there enough liquidity on the stable coin used? (Polygon is leading here as well)
-- How fast is it for quick settlement?
-- Possibility to get a grant to support the project (Celo and Fuse might be more interesting for this)
+- Solidity (EVM compatible blockchain)
+- React Native ([expo](https://expo.dev), [solito](https://github.com/nandorojo/solito))
 
 ## Running the tests
 
 ```
 git clone git@github.com:daobrussels/citizencoin.git
 cd citizencoin/smartcontracts
+npm install
 npm run test
 ```
