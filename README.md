@@ -57,3 +57,7 @@ cd citizencoin/smartcontracts
 npm install
 npm run test
 ```
+
+## Conversations
+- See the [issues on github](https://github.com/daobrussels/citizencoin/issues)
+- Join our [group on Signal](https://signal.group/#CjQKIN2gGI5soaBgKDQDC6ZpdU96vJ48WbyO6VNfOHo9gUbyEhB_neXkJ4pECA463LMX02R7)
